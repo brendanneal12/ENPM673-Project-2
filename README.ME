@@ -1,0 +1,41 @@
+ENPM673 Project 2
+Brendan Neal
+Directory ID: bneal12
+
+Project Details: OpenCV, Homography Calculation, Camera Pose Estimation, Feature Detection, Feature Matching, RANSAC Homography, Image Stitching
+
+Recommended Workspace: Visual Studio Code
+
+Libraries Used: numpy, opencv, math, from matplotlib: pyplot, from scipy.spatial.transform: Rotation
+
+NOTE 1: Allowed to use Rotation to convert from rotation matrix to Euler Angles
+
+Before you run code: make sure to have project2.avi, Image_1.jpg, Image_2.jpg, Image_3.jpg, Image_4.jpg, as well as the two scripts in your workspace folder.
+
+NOTE 2: For each problem, there is a separate script.
+
+----------------How to Run Project_2_Problem1.py-------------------
+1. Hit Run
+2. The project2.avi video will appear on screen with green detected lines and pink detected corners.
+    As this is running, the Euler Angles and Translation Matrix will be outputted to the terminal.
+3. Once the video ends, a plot with two subplots will appear showing the x,y,z translations over time in one, and the Euler angles over time in the other.
+
+----------------How to Run Project_2_Problem2.py-------------------
+1. Hit Run
+2. Observe Key Points for Image 1, then close the Image.
+3. Observe Key Points for Image 2, then close the Image.
+4. Observe Key Points for Image 3, then close the Image.
+5. Observe Key Points for Image 4, then close the Image.
+6. Observe Matched Features for Images 1 and 2, then close the Image.
+7. Observe Matched Features for Images 2 and 3, then close the Image.
+8. Observe Matched Features for Images 3 and 4, then close the Image.
+9. Upon Closing Matched Features for Images 3 and 4, RANSAC Homography will begin begin, outputting Max Iterations, Current Iterations, and Max Inlier Count to terminal.
+NOTE 3: This takes a while, please be patient.
+NOTE 4: If the code throws a float divide by zero error, please rerun the code. Sometimes the function pulls a bad set of matched features and breaks the code. 
+        The script works 95% of the time (from my testing) and outputs properly so long as the bad matched set of features doesn't get pulled.
+10. Observe the Stitched 1st and 2nd Image, then close the Image.
+11. Observe the Stitched 2nd and 3rd Image, then close the Image.
+12. Observe the Stitched 3rd and 4th Image, then close the Image.
+13. Observe the final outputted panorama Image, then close the Image.
+
+NOTE 5: Some of the outputs may differ from report due to the nature of RANSAC.
